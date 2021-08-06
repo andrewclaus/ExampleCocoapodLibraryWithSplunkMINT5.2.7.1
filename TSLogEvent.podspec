@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "TSLogEvent"
-  s.version          = "1.0.4"
+  s.version          = "1.0.5"
   s.summary          = "Event Log framework for iOS."
   s.homepage         = "https://github.com/andrewclaus/ExampleCocoapodLibraryWithSplunkMINT5.2.7.1"
   s.license          = 'MIT license'
@@ -23,9 +23,5 @@ Pod::Spec.new do |s|
 
   #uncomment this line to use SplunkMint 5.2.7 from CocoaPods
   #s.dependency 'SplunkMint', '5.2.7'
-
-  s.dependency 'Firebase/Crashlytics', '~> 8.2.0'
-  s.dependency 'Firebase/Analytics', '~> 8.2.0'
-  s.dependency 'Dynatrace', '~> 8.217'
 
 end
