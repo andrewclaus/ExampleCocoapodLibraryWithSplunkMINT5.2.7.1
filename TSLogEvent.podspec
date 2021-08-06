@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "TSLogEvent"
-  s.version          = "1.0.2"
+  s.version          = "1.0.3"
   s.summary          = "Event Log framework for iOS."
   s.homepage         = "https://github.com/andrewclaus/ExampleCocoapodLibraryWithSplunkMINT5.2.7.1"
   s.license          = 'MIT license'
