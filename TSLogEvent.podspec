@@ -27,6 +27,5 @@ Pod::Spec.new do |s|
   s.dependency 'Firebase/Crashlytics', '~> 8.2.0'
   s.dependency 'Firebase/Analytics', '~> 8.2.0'
   s.dependency 'Dynatrace', '~> 8.217'
-  s.dependency 'SwiftUtilityCollection'
 
 end
