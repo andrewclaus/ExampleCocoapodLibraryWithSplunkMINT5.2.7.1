@@ -20,5 +20,7 @@ class ViewController: UIViewController {
         } else {
             TSLogEvent.logEvent("User tapped Button 2")
         }
+    
+        eventLogTextView.text = TSLogEvent.logHistory()
     }
 }

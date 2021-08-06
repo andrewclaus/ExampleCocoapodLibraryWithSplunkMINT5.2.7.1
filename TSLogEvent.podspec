@@ -15,13 +15,18 @@ Pod::Spec.new do |s|
   s.source_files = s.name + "/**/*.{h,m,swift}"
 
   #uncomment these lines to get this CocoaPod to validate
-  #s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
-  #s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   
   #uncomment this line to use the SplunkMint.framework found locally in the project
   s.vendored_frameworks = "SplunkMint.framework"
 
   #uncomment this line to use SplunkMint 5.2.7 from CocoaPods
   #s.dependency 'SplunkMint', '5.2.7'
+
+  s.dependency 'Firebase/Crashlytics', '~> 8.2.0'
+  s.dependency 'Firebase/Analytics', '~> 8.2.0'
+  s.dependency 'Dynatrace', '~> 8.217'
+  s.dependency 'SwiftUtilityCollection'
 
 end

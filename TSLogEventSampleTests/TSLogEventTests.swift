@@ -17,11 +17,25 @@ class TSLogEventTests: XCTestCase {
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
         TSLogEvent.shared.logEventInterfaces.removeAll()
+        TSLogHistory.shared.clearLogs()
     }
 
     override func tearDownWithError() throws {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         TSLogEvent.shared.logEventInterfaces.removeAll()
+        TSLogHistory.shared.clearLogs()
+    }
+    
+    func testAddDynatrace_WithConfig_DynatraceAdded() {
+        // Arrange
+        let logEvent = TSLogEvent.shared
+        let testDynatraceConfig = DynatraceConfig(appID: "TestID", allowAnyCert: "TestCert")
+        
+        // Act
+        TSLogEvent.addDynatrace(testDynatraceConfig)
+        
+        // Assert
+        XCTAssertTrue(logEvent.logEventInterfaces.count == 1)
     }
     
     func testAddSplunk_WithConfig_SplunkAdded() {
@@ -96,6 +110,60 @@ class TSLogEventTests: XCTestCase {
         
         // Act
         TSLogEvent.logEvent(testEventName, withError: testError)
+    }
+    
+    func testLogEvent_WithEventNameAndAction_LogHistoryExist() {
+        // Arrange
+        
+        // Act
+        TSLogEvent.logEvent(testEventName, withAction: "TestAction")
+        
+        // Assert
+        XCTAssertNotNil(TSLogHistory.shared.logHistory())
+        XCTAssertTrue(TSLogHistory.shared.logHistory().count > 0)
+    }
+    
+    func testLogEvent_WithEventNameAndParameters_LogHistoryExist() {
+        // Arrange
+        
+        // Act
+        TSLogEvent.logEvent(testEventName, withParameters: ["TestName": "TestStuff"])
+        
+        // Assert
+        XCTAssertNotNil(TSLogHistory.shared.logHistory())
+        XCTAssertTrue(TSLogHistory.shared.logHistory().count > 0)
+    }
+    
+    func testLogEventForCrashReporting_LogHistoryExist() {
+        // Arrange
+        
+        // Act
+        TSLogEvent.logEventForCrashReporting(testEventName)
+        
+        // Assert
+        XCTAssertTrue(TSLogHistory.shared.logHistory().count > 0)
+    }
+    
+    func testLogHistory_LogHistoryNotNil() {
+        // Arrange
+        TSLogEvent.logEventForCrashReporting(testEventName)
+        
+        // Act
+        let logHistory = TSLogEvent.logHistory()
+        
+        // Assert
+        XCTAssertNotNil(logHistory)
+    }
+    
+    func testClearHistory_WithHistory_HistoryNotExist() {
+        // Arrange
+        TSLogEvent.logEventForCrashReporting(testEventName)
+        
+        // Act
+        TSLogEvent.clearHistory()
+        
+        // Assert
+        XCTAssertTrue(TSLogHistory.shared.logHistory().count == 0)
     }
     
     func testPrint_returnsDebugMessage() {

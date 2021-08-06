@@ -1,0 +1,6 @@
+module Pods_TSLogEvent {
+  umbrella header "Pods-TSLogEvent-umbrella.h"
+
+  export *
+  module * { export * }
+}
