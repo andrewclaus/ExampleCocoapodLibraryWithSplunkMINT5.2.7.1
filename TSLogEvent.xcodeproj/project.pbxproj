@@ -1,0 +1,736 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		093BEE4F26BDAC1800FA6FC6 /* SplunkMint.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 093BEE4E26BDAC1800FA6FC6 /* SplunkMint.framework */; };
+		093BEE8526BDAD6F00FA6FC6 /* SplunkMint.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 093BEE4E26BDAC1800FA6FC6 /* SplunkMint.framework */; };
+		093BEE8626BDAD7600FA6FC6 /* SplunkMint.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 093BEE4E26BDAC1800FA6FC6 /* SplunkMint.framework */; };
+		0A699DE726583C2D00BDE3F9 /* TSLogEventInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A699DE626583C2D00BDE3F9 /* TSLogEventInterface.swift */; };
+		0A699DE826583C2D00BDE3F9 /* TSLogEventInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A699DE626583C2D00BDE3F9 /* TSLogEventInterface.swift */; };
+		0A699DE926583C2D00BDE3F9 /* TSLogEventInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A699DE626583C2D00BDE3F9 /* TSLogEventInterface.swift */; };
+		0A7737CA265E9B54004A8A86 /* SplunkMintConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7737C9265E9B54004A8A86 /* SplunkMintConfig.swift */; };
+		0A7737CB265E9B54004A8A86 /* SplunkMintConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7737C9265E9B54004A8A86 /* SplunkMintConfig.swift */; };
+		0A7737CC265E9B54004A8A86 /* SplunkMintConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7737C9265E9B54004A8A86 /* SplunkMintConfig.swift */; };
+		0A7737D1265E9B63004A8A86 /* SplunkMintLogEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7737D0265E9B63004A8A86 /* SplunkMintLogEvent.swift */; };
+		0A7737D2265E9B63004A8A86 /* SplunkMintLogEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7737D0265E9B63004A8A86 /* SplunkMintLogEvent.swift */; };
+		0A7737D3265E9B63004A8A86 /* SplunkMintLogEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7737D0265E9B63004A8A86 /* SplunkMintLogEvent.swift */; };
+		0A7737D8265E9DB8004A8A86 /* Enum+Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7737D7265E9DB8004A8A86 /* Enum+Environment.swift */; };
+		0A7737D9265E9DB8004A8A86 /* Enum+Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7737D7265E9DB8004A8A86 /* Enum+Environment.swift */; };
+		0A7737DA265E9DB8004A8A86 /* Enum+Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7737D7265E9DB8004A8A86 /* Enum+Environment.swift */; };
+		0A9B85A72475FB0300003CCC /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 0A9B85A62475FB0300003CCC /* README.md */; };
+		0AACBC8526A6027E008009B3 /* TSLogEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AACBC8426A6027E008009B3 /* TSLogEvent.swift */; };
+		0AACBC8626A6027E008009B3 /* TSLogEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AACBC8426A6027E008009B3 /* TSLogEvent.swift */; };
+		0AACBC8726A6027E008009B3 /* TSLogEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AACBC8426A6027E008009B3 /* TSLogEvent.swift */; };
+		0AACBCE126A61663008009B3 /* TSLogEventTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AACBCE026A61663008009B3 /* TSLogEventTests.swift */; };
+		0ABA089E26AA38B60027E209 /* SplunkMintLogEventTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABA089D26AA38B60027E209 /* SplunkMintLogEventTests.swift */; };
+		0ABAFF5226A9EE450027E209 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABAFF5126A9EE450027E209 /* AppDelegate.swift */; };
+		0ABAFF5726A9EE790027E209 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABAFF5626A9EE790027E209 /* ViewController.swift */; };
+		20A4B0AD26A752DA00CA9E75 /* Logger+Statistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F9BD4B26A746E100A33C1F /* Logger+Statistics.swift */; };
+		20A4B0D626A8762300CA9E75 /* Logger+Statistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F9BD4B26A746E100A33C1F /* Logger+Statistics.swift */; };
+		20F9BD2226A72C5600A33C1F /* TSLogEventConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F9BD2126A72C5600A33C1F /* TSLogEventConstants.swift */; };
+		20F9BD2926A72D5D00A33C1F /* TSLogEventConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F9BD2126A72C5600A33C1F /* TSLogEventConstants.swift */; };
+		20F9BD2D26A72D5E00A33C1F /* TSLogEventConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F9BD2126A72C5600A33C1F /* TSLogEventConstants.swift */; };
+		20F9BD4C26A746E100A33C1F /* Logger+Statistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F9BD4B26A746E100A33C1F /* Logger+Statistics.swift */; };
+		D72678201DE36729007881FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D726781E1DE36729007881FC /* Main.storyboard */; };
+		D72678221DE36729007881FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D72678211DE36729007881FC /* Assets.xcassets */; };
+		D72678251DE36729007881FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D72678231DE36729007881FC /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D726782C1DE36729007881FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D79F04001DE36128002CFC9E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D72678121DE36728007881FC;
+			remoteInfo = TSLogEventSample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D79F04061DE36128002CFC9E /* Copy Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			name = "Copy Files";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		093BEE4E26BDAC1800FA6FC6 /* SplunkMint.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SplunkMint.framework; sourceTree = "<group>"; };
+		0A699DE626583C2D00BDE3F9 /* TSLogEventInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSLogEventInterface.swift; sourceTree = "<group>"; };
+		0A7737C9265E9B54004A8A86 /* SplunkMintConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplunkMintConfig.swift; sourceTree = "<group>"; };
+		0A7737D0265E9B63004A8A86 /* SplunkMintLogEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplunkMintLogEvent.swift; sourceTree = "<group>"; };
+		0A7737D7265E9DB8004A8A86 /* Enum+Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Enum+Environment.swift"; sourceTree = "<group>"; };
+		0A9B85A62475FB0300003CCC /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		0AACBC8426A6027E008009B3 /* TSLogEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSLogEvent.swift; sourceTree = "<group>"; };
+		0AACBCE026A61663008009B3 /* TSLogEventTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSLogEventTests.swift; sourceTree = "<group>"; };
+		0ABA089D26AA38B60027E209 /* SplunkMintLogEventTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplunkMintLogEventTests.swift; sourceTree = "<group>"; };
+		0ABAFF5126A9EE450027E209 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0ABAFF5626A9EE790027E209 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		20F9BD2126A72C5600A33C1F /* TSLogEventConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSLogEventConstants.swift; sourceTree = "<group>"; };
+		20F9BD4B26A746E100A33C1F /* Logger+Statistics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Logger+Statistics.swift"; sourceTree = "<group>"; };
+		D72678131DE36728007881FC /* TSLogEventSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TSLogEventSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D726781F1DE36729007881FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D72678211DE36729007881FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D72678241DE36729007881FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D72678261DE36729007881FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D726782B1DE36729007881FC /* TSLogEventSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TSLogEventSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D72678311DE36729007881FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D79F04081DE36128002CFC9E /* libTSLogEvent.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTSLogEvent.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D72678101DE36728007881FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				093BEE8526BDAD6F00FA6FC6 /* SplunkMint.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D72678281DE36729007881FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				093BEE8626BDAD7600FA6FC6 /* SplunkMint.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D79F04051DE36128002CFC9E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				093BEE4F26BDAC1800FA6FC6 /* SplunkMint.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A7737BF265E9B34004A8A86 /* SplunkMint */ = {
+			isa = PBXGroup;
+			children = (
+				0A7737D7265E9DB8004A8A86 /* Enum+Environment.swift */,
+				0A7737C9265E9B54004A8A86 /* SplunkMintConfig.swift */,
+				0A7737D0265E9B63004A8A86 /* SplunkMintLogEvent.swift */,
+			);
+			path = SplunkMint;
+			sourceTree = "<group>";
+		};
+		0ACBFC0026A8A1940074F12C /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				20F9BD4B26A746E100A33C1F /* Logger+Statistics.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		68D6E22CACDCA1FB5807D8D3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				093BEE4E26BDAC1800FA6FC6 /* SplunkMint.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D72678141DE36729007881FC /* TSLogEventSample */ = {
+			isa = PBXGroup;
+			children = (
+				D72678261DE36729007881FC /* Info.plist */,
+				0ABAFF5126A9EE450027E209 /* AppDelegate.swift */,
+				0ABAFF5626A9EE790027E209 /* ViewController.swift */,
+				D72678211DE36729007881FC /* Assets.xcassets */,
+				D72678231DE36729007881FC /* LaunchScreen.storyboard */,
+				D726781E1DE36729007881FC /* Main.storyboard */,
+			);
+			path = TSLogEventSample;
+			sourceTree = "<group>";
+		};
+		D726782E1DE36729007881FC /* TSLogEventSampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				D72678311DE36729007881FC /* Info.plist */,
+				0AACBCE026A61663008009B3 /* TSLogEventTests.swift */,
+				0ABA089D26AA38B60027E209 /* SplunkMintLogEventTests.swift */,
+			);
+			path = TSLogEventSampleTests;
+			sourceTree = "<group>";
+		};
+		D79F03FF1DE36128002CFC9E = {
+			isa = PBXGroup;
+			children = (
+				0A9B85A62475FB0300003CCC /* README.md */,
+				D79F040A1DE36128002CFC9E /* TSLogEvent */,
+				D72678141DE36729007881FC /* TSLogEventSample */,
+				D726782E1DE36729007881FC /* TSLogEventSampleTests */,
+				D79F04091DE36128002CFC9E /* Products */,
+				68D6E22CACDCA1FB5807D8D3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D79F04091DE36128002CFC9E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D79F04081DE36128002CFC9E /* libTSLogEvent.a */,
+				D72678131DE36728007881FC /* TSLogEventSample.app */,
+				D726782B1DE36729007881FC /* TSLogEventSampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D79F040A1DE36128002CFC9E /* TSLogEvent */ = {
+			isa = PBXGroup;
+			children = (
+				0AACBC8426A6027E008009B3 /* TSLogEvent.swift */,
+				20F9BD2126A72C5600A33C1F /* TSLogEventConstants.swift */,
+				0A699DE626583C2D00BDE3F9 /* TSLogEventInterface.swift */,
+				0ACBFC0026A8A1940074F12C /* Extension */,
+				0A7737BF265E9B34004A8A86 /* SplunkMint */,
+			);
+			path = TSLogEvent;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D72678121DE36728007881FC /* TSLogEventSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D72678321DE36729007881FC /* Build configuration list for PBXNativeTarget "TSLogEventSample" */;
+			buildPhases = (
+				D726780F1DE36728007881FC /* Sources */,
+				D72678101DE36728007881FC /* Frameworks */,
+				D72678111DE36728007881FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TSLogEventSample;
+			productName = TSLogEventSample;
+			productReference = D72678131DE36728007881FC /* TSLogEventSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D726782A1DE36729007881FC /* TSLogEventSampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D72678351DE36729007881FC /* Build configuration list for PBXNativeTarget "TSLogEventSampleTests" */;
+			buildPhases = (
+				D72678271DE36729007881FC /* Sources */,
+				D72678281DE36729007881FC /* Frameworks */,
+				D72678291DE36729007881FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D726782D1DE36729007881FC /* PBXTargetDependency */,
+			);
+			name = TSLogEventSampleTests;
+			productName = TSLogEventSampleTests;
+			productReference = D726782B1DE36729007881FC /* TSLogEventSampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D79F04071DE36128002CFC9E /* TSLogEvent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D79F04111DE36128002CFC9E /* Build configuration list for PBXNativeTarget "TSLogEvent" */;
+			buildPhases = (
+				D79F04041DE36128002CFC9E /* Sources */,
+				D79F04051DE36128002CFC9E /* Frameworks */,
+				D79F04061DE36128002CFC9E /* Copy Files */,
+				0A69A12E265BFE1200BDE3F9 /* Splunk */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TSLogEvent;
+			productName = TSLogEvent;
+			productReference = D79F04081DE36128002CFC9E /* libTSLogEvent.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D79F04001DE36128002CFC9E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1240;
+				ORGANIZATIONNAME = "Title Source";
+				TargetAttributes = {
+					D72678121DE36728007881FC = {
+						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 1240;
+					};
+					D726782A1DE36729007881FC = {
+						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 1240;
+					};
+					D79F04071DE36128002CFC9E = {
+						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 1240;
+					};
+				};
+			};
+			buildConfigurationList = D79F04031DE36128002CFC9E /* Build configuration list for PBXProject "TSLogEvent" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D79F03FF1DE36128002CFC9E;
+			productRefGroup = D79F04091DE36128002CFC9E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D79F04071DE36128002CFC9E /* TSLogEvent */,
+				D72678121DE36728007881FC /* TSLogEventSample */,
+				D726782A1DE36729007881FC /* TSLogEventSampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D72678111DE36728007881FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D72678251DE36729007881FC /* LaunchScreen.storyboard in Resources */,
+				D72678221DE36729007881FC /* Assets.xcassets in Resources */,
+				0A9B85A72475FB0300003CCC /* README.md in Resources */,
+				D72678201DE36729007881FC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D72678291DE36729007881FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0A69A12E265BFE1200BDE3F9 /* Splunk */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Splunk;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "SCRIPT=`/usr/bin/find \"${SRCROOT}\" -name splunkmint_postbuild_dsym_upload_script.sh | head -n 1`\n\n/bin/bash \"${SCRIPT}\" \"API_KEY\" \"API_TOKEN\" -f\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D726780F1DE36728007881FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A699DE826583C2D00BDE3F9 /* TSLogEventInterface.swift in Sources */,
+				0A7737D9265E9DB8004A8A86 /* Enum+Environment.swift in Sources */,
+				0A7737D2265E9B63004A8A86 /* SplunkMintLogEvent.swift in Sources */,
+				0ABAFF5726A9EE790027E209 /* ViewController.swift in Sources */,
+				0ABAFF5226A9EE450027E209 /* AppDelegate.swift in Sources */,
+				0AACBC8626A6027E008009B3 /* TSLogEvent.swift in Sources */,
+				20F9BD2926A72D5D00A33C1F /* TSLogEventConstants.swift in Sources */,
+				0A7737CB265E9B54004A8A86 /* SplunkMintConfig.swift in Sources */,
+				20A4B0AD26A752DA00CA9E75 /* Logger+Statistics.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D72678271DE36729007881FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A699DE926583C2D00BDE3F9 /* TSLogEventInterface.swift in Sources */,
+				0A7737DA265E9DB8004A8A86 /* Enum+Environment.swift in Sources */,
+				20A4B0D626A8762300CA9E75 /* Logger+Statistics.swift in Sources */,
+				0AACBCE126A61663008009B3 /* TSLogEventTests.swift in Sources */,
+				0A7737D3265E9B63004A8A86 /* SplunkMintLogEvent.swift in Sources */,
+				20F9BD2D26A72D5E00A33C1F /* TSLogEventConstants.swift in Sources */,
+				0ABA089E26AA38B60027E209 /* SplunkMintLogEventTests.swift in Sources */,
+				0AACBC8726A6027E008009B3 /* TSLogEvent.swift in Sources */,
+				0A7737CC265E9B54004A8A86 /* SplunkMintConfig.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D79F04041DE36128002CFC9E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A7737D8265E9DB8004A8A86 /* Enum+Environment.swift in Sources */,
+				0AACBC8526A6027E008009B3 /* TSLogEvent.swift in Sources */,
+				20F9BD2226A72C5600A33C1F /* TSLogEventConstants.swift in Sources */,
+				0A7737D1265E9B63004A8A86 /* SplunkMintLogEvent.swift in Sources */,
+				0A699DE726583C2D00BDE3F9 /* TSLogEventInterface.swift in Sources */,
+				20F9BD4C26A746E100A33C1F /* Logger+Statistics.swift in Sources */,
+				0A7737CA265E9B54004A8A86 /* SplunkMintConfig.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D726782D1DE36729007881FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D72678121DE36728007881FC /* TSLogEventSample */;
+			targetProxy = D726782C1DE36729007881FC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D726781E1DE36729007881FC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D726781F1DE36729007881FC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D72678231DE36729007881FC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D72678241DE36729007881FC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D72678331DE36729007881FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = TSLogEventSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.titlesource.TSLogEventSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "TSLogEvent/TSLogEvent-Swift.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D72678341DE36729007881FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = TSLogEventSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.titlesource.TSLogEventSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "TSLogEvent/TSLogEvent-Swift.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D72678361DE36729007881FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = TSLogEventSampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.titlesource.TSLogEventSampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		D72678371DE36729007881FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = TSLogEventSampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.titlesource.TSLogEventSampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		D79F040F1DE36128002CFC9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COMPILER_INDEX_STORE_ENABLE = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		D79F04101DE36128002CFC9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COMPILER_INDEX_STORE_ENABLE = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D79F04121DE36128002CFC9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEFINES_MODULE = YES;
+				DTX_ALLOW_ANY_CERT = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseCore\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseCoreDiagnostics\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseCrashlytics\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseInstallations\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleDataTransport\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleDataTransportCCTSupport\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleUtilities\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/PromisesObjC\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/nanopb\"",
+					"\"${PODS_ROOT}/FirebaseAnalytics/Frameworks\"",
+					"\"${PODS_ROOT}/GoogleAppMeasurement/Frameworks\"",
+					"$(PROJECT_DIR)",
+				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		D79F04131DE36128002CFC9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEFINES_MODULE = YES;
+				DTX_ALLOW_ANY_CERT = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseCore\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseCoreDiagnostics\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseCrashlytics\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseInstallations\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleDataTransport\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleDataTransportCCTSupport\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleUtilities\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/PromisesObjC\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/nanopb\"",
+					"\"${PODS_ROOT}/FirebaseAnalytics/Frameworks\"",
+					"\"${PODS_ROOT}/GoogleAppMeasurement/Frameworks\"",
+					"$(PROJECT_DIR)",
+				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D72678321DE36729007881FC /* Build configuration list for PBXNativeTarget "TSLogEventSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D72678331DE36729007881FC /* Debug */,
+				D72678341DE36729007881FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D72678351DE36729007881FC /* Build configuration list for PBXNativeTarget "TSLogEventSampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D72678361DE36729007881FC /* Debug */,
+				D72678371DE36729007881FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D79F04031DE36128002CFC9E /* Build configuration list for PBXProject "TSLogEvent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D79F040F1DE36128002CFC9E /* Debug */,
+				D79F04101DE36128002CFC9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D79F04111DE36128002CFC9E /* Build configuration list for PBXNativeTarget "TSLogEvent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D79F04121DE36128002CFC9E /* Debug */,
+				D79F04131DE36128002CFC9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D79F04001DE36128002CFC9E /* Project object */;
+}

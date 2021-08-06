@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TSLogEventSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VNE-ea-HzF">
+                                <rect key="frame" x="114.5" y="52" width="185" height="65"/>
+                                <color key="backgroundColor" red="0.44799992442131042" green="0.80562877655029297" blue="0.69641262292861938" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="185" id="5DZ-7q-Uh1"/>
+                                    <constraint firstAttribute="height" constant="65" id="qPD-Me-BRE"/>
+                                </constraints>
+                                <state key="normal" title="Button 1">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="eventLogButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hhW-22-Mtw"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="NnM-40-s0n">
+                                <rect key="frame" x="0.0" y="246" width="414" height="616"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CXI-80-JWN">
+                                <rect key="frame" x="114.5" y="149" width="185" height="65"/>
+                                <color key="backgroundColor" red="0.80392169952392578" green="0.63529419898986816" blue="0.85490196943283081" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="185" id="Mko-aG-wUF"/>
+                                    <constraint firstAttribute="height" constant="65" id="tHE-Zl-h9n"/>
+                                </constraints>
+                                <state key="normal" title="Button 2">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="eventLogButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iWj-jU-Beu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="iOW-mo-oOq"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="VNE-ea-HzF" firstAttribute="top" secondItem="iOW-mo-oOq" secondAttribute="top" constant="8" id="2S5-SG-Lfm"/>
+                            <constraint firstItem="CXI-80-JWN" firstAttribute="top" secondItem="VNE-ea-HzF" secondAttribute="bottom" constant="32" id="6fU-tU-E1W"/>
+                            <constraint firstItem="NnM-40-s0n" firstAttribute="top" secondItem="CXI-80-JWN" secondAttribute="bottom" constant="32" id="6yL-Dd-4nG"/>
+                            <constraint firstItem="iOW-mo-oOq" firstAttribute="trailing" secondItem="NnM-40-s0n" secondAttribute="trailing" id="Fj4-eg-N09"/>
+                            <constraint firstItem="CXI-80-JWN" firstAttribute="centerX" secondItem="iOW-mo-oOq" secondAttribute="centerX" id="d6x-Zk-aAM"/>
+                            <constraint firstItem="iOW-mo-oOq" firstAttribute="bottom" secondItem="NnM-40-s0n" secondAttribute="bottom" id="j2Q-X6-evd"/>
+                            <constraint firstItem="NnM-40-s0n" firstAttribute="leading" secondItem="iOW-mo-oOq" secondAttribute="leading" id="loy-hy-7hf"/>
+                            <constraint firstItem="NnM-40-s0n" firstAttribute="centerX" secondItem="iOW-mo-oOq" secondAttribute="centerX" id="nEL-XO-GeJ"/>
+                            <constraint firstItem="VNE-ea-HzF" firstAttribute="centerX" secondItem="iOW-mo-oOq" secondAttribute="centerX" id="qJE-IE-G9R"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="eventLogButton" destination="VNE-ea-HzF" id="f0A-ph-arA"/>
+                        <outlet property="eventLogButton2" destination="CXI-80-JWN" id="MFO-Vg-gAE"/>
+                        <outlet property="eventLogTextView" destination="NnM-40-s0n" id="0cP-OU-XLJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="185.50724637681162" y="271.875"/>
+        </scene>
+    </scenes>
+</document>
