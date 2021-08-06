@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "TSLogEvent"
-  s.version          = "1.0.5"
+  s.version          = "1.0.6"
   s.summary          = "Event Log framework for iOS."
   s.homepage         = "https://github.com/andrewclaus/ExampleCocoapodLibraryWithSplunkMINT5.2.7.1"
   s.license          = 'MIT license'
@@ -20,6 +20,13 @@ Pod::Spec.new do |s|
   
   #uncomment this line to use the SplunkMint.framework found locally in the project
   s.vendored_frameworks = "SplunkMint.framework"
+  s.frameworks = [
+    "SystemConfiguration",
+    "CoreTelephony",
+    "WebKit",
+    "CoreLocation"
+  ]
+  s.libraries = "z"
 
   #uncomment this line to use SplunkMint 5.2.7 from CocoaPods
   #s.dependency 'SplunkMint', '5.2.7'
