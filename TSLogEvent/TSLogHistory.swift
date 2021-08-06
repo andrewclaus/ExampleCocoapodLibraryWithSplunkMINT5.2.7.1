@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import SwiftUtilityCollection
 
 class TSLogHistory {
     var allLogs: String = ""
@@ -24,7 +23,7 @@ class TSLogHistory {
     
     func addLog(message: String) {
         if message.count > 0 && !message.isEmpty {
-            allLogs += "\(Date().formattedWithISOTimeZone()): \(message)\n"
+            allLogs += "\(message)\n"
         }
     }
     

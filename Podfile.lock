@@ -92,17 +92,13 @@ PODS:
   - nanopb/decode (2.30908.0)
   - nanopb/encode (2.30908.0)
   - PromisesObjC (1.2.12)
-  - SwiftUtilityCollection (0.5.3)
 
 DEPENDENCIES:
   - Dynatrace (~> 8.217)
   - Firebase/Analytics (~> 8.2.0)
   - Firebase/Crashlytics (~> 8.2.0)
-  - SwiftUtilityCollection
 
 SPEC REPOS:
-  "git@ssh.dev.azure.com:v3/amrock/Shared/Amrock.CocoaPods":
-    - SwiftUtilityCollection
   https://github.com/CocoaPods/Specs.git:
     - Dynatrace
     - Firebase
@@ -130,8 +126,7 @@ SPEC CHECKSUMS:
   GoogleUtilities: 45dbb24a7f351d69d0a601482b39ad6c32e30dab
   nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
   PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
-  SwiftUtilityCollection: f781b6020eb26cd7394837abf737fbd755dbedfa
 
-PODFILE CHECKSUM: 86f9627ced3d610e098e0540d5c83b7af0abb326
+PODFILE CHECKSUM: 73c5f955e5370fb5677c2113daa756a87ac769bc
 
 COCOAPODS: 1.10.1

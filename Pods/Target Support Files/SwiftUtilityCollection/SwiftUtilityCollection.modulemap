@@ -1,6 +1,0 @@
-module SwiftUtilityCollection {
-  umbrella header "SwiftUtilityCollection-umbrella.h"
-
-  export *
-  module * { export * }
-}
