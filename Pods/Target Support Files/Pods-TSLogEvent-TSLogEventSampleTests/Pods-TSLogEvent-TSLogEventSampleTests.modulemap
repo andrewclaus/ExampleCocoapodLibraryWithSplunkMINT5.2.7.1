@@ -1,6 +1,0 @@
-module Pods_TSLogEvent_TSLogEventSampleTests {
-  umbrella header "Pods-TSLogEvent-TSLogEventSampleTests-umbrella.h"
-
-  export *
-  module * { export * }
-}

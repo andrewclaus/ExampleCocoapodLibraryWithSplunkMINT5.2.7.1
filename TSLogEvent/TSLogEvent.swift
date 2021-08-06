@@ -7,9 +7,6 @@
 //
 
 import Foundation
-import FirebaseCore
-import FirebaseCrashlytics
-import FirebaseAnalytics
 import QuartzCore
 import os.log
 
@@ -23,20 +20,8 @@ public class TSLogEvent: NSObject {
     /// - Parameters:
     ///   - dynatraceConfig: Configuration for the Dynatrace log event
     ///   - splunkMintConfig: Configuration for the Splunk log event
-    @objc public static func initializeLogEvent(dynatraceConfig: DynatraceConfig?, splunkMintConfig: SplunkMintConfig?) {
+    @objc public static func initializeLogEvent(splunkMintConfig: SplunkMintConfig?) {
         if ProcessInfo.processInfo.environment["XCTestConfigurationFilePath"] == nil { // Not unit test
-            
-            // Firebase
-            FirebaseApp.configure()
-            
-            // Manually uploading crash logs because automatic upload doesn't work for now
-            // https://github.com/firebase/firebase-ios-sdk/issues/5805
-            Crashlytics.crashlytics().checkForUnsentReports { (_) in
-                Crashlytics.crashlytics().sendUnsentReports()
-            }
-            
-            // Dynatrace
-            addDynatrace(dynatraceConfig)
             
             // Splunk
             addSplunk(splunkMintConfig)
@@ -46,8 +31,6 @@ public class TSLogEvent: NSObject {
     /// This method should be called when need set username
     /// - Parameter username: A string of username/Email
     @objc public static func setUsername(_ username: String) {
-        Analytics.setUserID(username)
-        Crashlytics.crashlytics().setUserID(username)
         logToOtherSDK(username: username, eventName: nil, error: nil)
     }
     
@@ -76,7 +59,6 @@ public class TSLogEvent: NSObject {
         var newUserInfo = (error as NSError).userInfo
         newUserInfo[K.EventParameter.event] = eventName
         let newError = NSError(domain: currentError.domain, code: currentError.code, userInfo: newUserInfo)
-        Crashlytics.crashlytics().record(error: newError)
         
         logEvent(eventName: eventName, parameters: newUserInfo, shouldIncludeAnalytics: true, shouldIncludeCrashReporting: false)
         logToOtherSDK(username: nil, eventName: eventName, error: newError)
@@ -110,14 +92,6 @@ public class TSLogEvent: NSObject {
 
 // Internal
 extension TSLogEvent {
-    static func addDynatrace(_ dynatraceConfig: DynatraceConfig?) {
-        if dynatraceConfig != nil {
-            let dynatraceLogEvent = DynatraceLogEvent()
-            dynatraceLogEvent.configuration = dynatraceConfig
-            dynatraceLogEvent.initializeSDK()
-            TSLogEvent.shared.logEventInterfaces.append(dynatraceLogEvent)
-        }
-    }
     
     static func addSplunk(_ splunkMintConfig: SplunkMintConfig?) {
         if splunkMintConfig != nil {
@@ -157,17 +131,6 @@ extension TSLogEvent {
         
         if let parameters = parameters {
             eventWithParameters = String(format: "%@, Parameters: %@", eventName, parameters)
-        }
-            
-#if DEBUG
-        // log analytics with or without paramaters
-        if shouldIncludeAnalytics {
-            Analytics.logEvent(shortenedEventName, parameters: parameters)
-        }
-#endif
-        // log crash reporting with or without parameters
-        if shouldIncludeCrashReporting {
-            Crashlytics.crashlytics().log(String(format: "%@", eventWithParameters))
         }
 
         print("Analytics Event: \(eventWithParameters)")
